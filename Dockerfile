@@ -2,6 +2,6 @@
 FROM tomcat:9.0
 
 # WARファイルをTomcatのwebappsフォルダにコピー
-COPY Potofolio.war /usr/local/tomcat/webapps/Portofolio.war
+COPY Portofolio.war /usr/local/tomcat/webapps/Portofolio.war
 # Webアプリは8080ポートで公開される
 EXPOSE 8080
