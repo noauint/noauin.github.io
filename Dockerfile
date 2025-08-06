@@ -1,10 +1,11 @@
+# ベースイメージとして Tomcat 9 を使用
 FROM tomcat:9.0
 
-# WAR ファイルを配置
-COPY Potofolio.war /usr/local/tomcat/webapps/
-
-# server.xml を上書き
+# server.xml を Tomcat の conf ディレクトリに上書きコピー
 COPY server.xml /usr/local/tomcat/conf/server.xml
 
-# ポートを開放
+# WARファイルをTomcatのwebappsフォルダにコピー
+COPY Portofolio.war /usr/local/tomcat/webapps/
+
+# Webアプリは8080ポートで公開される
 EXPOSE 8080
