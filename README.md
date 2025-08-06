@@ -11,7 +11,6 @@
 - Java Servlet
 - JSP
 - MySQL
-- Bootstrap
 
 ## 実行方法
 このリポジトリに含まれる `your-app.war` を、Tomcat の `webapps` フォルダに配置して起動してください。
